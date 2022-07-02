@@ -1,0 +1,12 @@
+<div class="class container">
+  <h1 class="class text-center my-5"> Today's tasks</h1>
+        <div class="class row">
+          <% @tasks.each do |task| %>
+          <div class="col-6 col-lg-4">
+          <div class="card mb-3">
+      <h5> <%= link_to task.title, task_path(task) %></h5>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
